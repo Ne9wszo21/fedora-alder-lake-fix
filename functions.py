@@ -266,8 +266,9 @@ def mdn_config():
     cpdir("blobs/mdn/tplg", "/lib/firmware/amd/sof-tplg")
 
 def st_warning():
-    print_warning("WARNING: Audio on AMD StoneyRidge Chromebooks requires a patched kernel.")
-    print_warning("You can get a prebuilt kernel for Debian/Ubuntu/Fedora from https://chrultrabook.sakamoto.pl/stoneyridge-kernel/")
+    print_warning("WARNING: Audio on AMD StoneyRidge Chromebooks requires a patched kernel for versions <6.19")
+    print_warning("Linux 6.19 and newer have all of the patches for stoney Chromebooks. If your distro packages Linux 6.19, please use that kernel.")
+    print_warning("You can get a prebuilt patched kernel for Debian/Ubuntu/Fedora from https://chrultrabook.sakamoto.pl/stoneyridge-kernel/")
     print_warning("For other distros, a patch file is included in that same link, under the patches directory.")
 
 
