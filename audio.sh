@@ -22,7 +22,6 @@ sudo mkdir -p /lib/firmware/intel
 sudo cp -r v2.2.x/sof-v2.2 /lib/firmware/intel/sof
 sudo cp -r v2.2.x/sof-tplg-v2.2 /lib/firmware/intel/sof-tplg
 
-
 echo "applying WeirdTreeThing's audio"
 cd "$HOME/fedora-alder-lake-fix" || { echo "where da chromebook-linux-audio?"; exit 1; }
 ./setup-audio
@@ -30,7 +29,6 @@ cd "$HOME/fedora-alder-lake-fix" || { echo "where da chromebook-linux-audio?"; e
 echo "getting rid of trash"
 rm -rf "$HOME/.local/state/wireplumber/"*
 rm -rf "$HOME/.config/pulse/"*
-
 
 echo "restarting hardware"
 sudo udevadm trigger
@@ -40,5 +38,3 @@ rm -rf "$HOME/sof-bin-2024.03" "$HOME/sof-bin-2024.03.tar.gz
 echo "rebooting in 5s"
 sleep 5
 sudo reboot
-
-
