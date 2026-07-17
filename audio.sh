@@ -24,7 +24,7 @@ sudo cp -r v2.2.x/sof-tplg-v2.2 /lib/firmware/intel/sof-tplg
 
 
 echo "applying WeirdTreeThing's audio"
-cd "$HOME/chromebook-linux-audio" || { echo "where da chromebook-linux-audio?"; exit 1; }
+cd "$HOME/fedora-alder-lake-fix" || { echo "where da chromebook-linux-audio?"; exit 1; }
 ./setup-audio
 
 echo "getting rid of trash"
