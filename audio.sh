@@ -15,7 +15,7 @@ wget https://github.com/thesofproject/sof-bin/releases/download/v2024.03/sof-bin
 
 echo "taking out files"
 tar -xf sof-bin-2024.03.tar.gz
-cd sof-bin-2024.03 || { echo "Extraction directory missing!"; exit 1; }
+cd sof-bin-2024.03 || { echo "extraction directory missing! did it download?"; exit 1; }
 
 echo "files are getting deported plz wait"
 sudo mkdir -p /lib/firmware/intel
